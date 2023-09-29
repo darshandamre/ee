@@ -6,11 +6,14 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
+    "dev": "nodemon src/index.ts",
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
     "tsup": "^7.1.0",
     "typescript": "^5.1.6"
   }
